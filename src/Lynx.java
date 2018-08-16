@@ -1,4 +1,5 @@
 public class Lynx extends Animal {
+
     public Lynx() {
         this.type = "Lynx";
     }

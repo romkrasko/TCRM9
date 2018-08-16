@@ -13,14 +13,8 @@ public class MainClass {
         Animal animal = new Animal();
         Animal animal1 = new Animal("bla2");
 
-        /*System.out.println(cats[0].isInCafe());
-        cats[0].setInCafe(false);
-        System.out.println(cats[0].isInCafe());
-        cats[0].setInCafe(true);
-        System.out.println(cats[0].isInCafe());
-        cats[0].takeAwayFromCafe(owner);
-        System.out.println(cats[0].isInCafe());
-        cafe.printCatsInCafe("Britain");*/
+        Person owner = new Person("personName");
+        Person owner1 = new Person("Roman");
 
         animal.speak();
         animal.info();
@@ -34,14 +28,13 @@ public class MainClass {
         cats[3].speak();
         cats[4].info();
 
-        Person owner = new Person("personName");
-        Person owner1 = new Person("Roman");
+        cats[2].takeAwayFromCafe(owner1);
+        System.out.println(cats[2].getOwner());
+
 
         Pet pet = new Pet("speakPet",12,"Johny",owner);
         pet.speak();
 
-        cats[2].takeAwayFromCafe(owner1);
-        System.out.println(cats[2].getOwner());
 
         Lynx lynx = new Lynx();
         lynx.speak();

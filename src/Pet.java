@@ -1,4 +1,5 @@
 public class Pet extends Animal {
+
     protected int age;
     public String name;
     private Person owner;
